@@ -48,11 +48,8 @@ function getFetch(){
         if( data.media_type === 'image'){
           document.querySelector('img').src = data.hdurl
           document.querySelector('h3').innerText = choice
-         
         }else if( data.media_type === 'video'){
-          document.querySelector('iframe').src = data.url
-
-
+          document.querySelector('iframe').src = data.url 
         }
         
         document.querySelector('p').innerText = data.explanation
